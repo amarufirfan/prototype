@@ -49,7 +49,7 @@
   opacity: 1;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 950px) {
     .top-wrapper {
         padding: 70px 0 170px 0;
         background-size: 400px;
