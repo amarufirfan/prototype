@@ -36,6 +36,9 @@
   margin: 10px 0;
 }
 
+a {
+    text-decoration: none;
+}
 .btn-offer {
   background-color: #661E0A;
   padding: 12px 24px;
