@@ -1,62 +1,195 @@
+body {
+    padding: 160px 0 200px 0;
+    background-image: url(2401.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-color: #003844;
+    height: 75px;
+    width: 100%;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+header p {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://image.freepik.com/free-vector/forex-trading-background_23-2148594605.jpg);
-  background-size: cover;
-  color: white;
-  text-align: left;
+    color: black;
+    text-align: left;
+    padding-bottom: 150px;
 }
 
 .container-wrapper{
-  margin-left:70px;
+    margin-left:70px;
 }
 
 .top-wrapper h1 {
-  opacity: 0.8;
-  font-size: 45px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper h2 {
     opacity: 0.8;
     font-size: 45px;
     margin-bottom: 10px;
 }
 
+.top-wrapper h2 {
+    opacity: 0.8;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .top-wrapper p {
-  opacity: 1;
-  margin-bottom: 3px;
+    opacity: 1;
+    margin-bottom: 3px;
 }
 
 .btn-wrapper {
-  margin: 30px 0;
-  font-style: unset;
+    margin: 30px 0;
+    font-style: unset;
 }
 
 .btn-wrapper p {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 a {
     text-decoration: none;
 }
+
 .btn-offer {
-  background-color: #661E0A;
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.9;
-  border-radius: 4px;
+    background-color: #003844;
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 4px;
 }
 
 .btn-offer:hover {
-  opacity: 1;
+    opacity: 1;
+}
+
+.mid-wrapper {
+    height: 500px;
+    padding-bottom: 90px;
+    background-color: none;
+    text-align: center;
+    opacity: .85;
+}
+
+.mid-wrapper .container {
+    background-color: #f7f7f7;
+}
+
+.heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+}
+  
+.heading h2 {
+    font-weight: normal;
+}
+  
+.lesson {
+    float: left;
+    width: 25%;
+}
+  
+.lesson-icon {
+    position: relative;
+}
+  
+.lesson-icon img {
+    height: 140px;
+}
+  
+.lesson-icon p {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    color: black;
+}
+  
+.txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 45px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.flex-list {
+    display: flex;
+}
+
+.flex-list .lesson {
+    flex: auto;
+}
+
+footer {
+    background-color: #003844;
+    height: 200px;
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+}
+  
+footer img {
+    width: 125px;
+}
+  
+footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+}
+  
+footer h3 {
+    color: #003776;
+}
+  
+footer .container li {
+    float: left;
+    list-style: none;
+    padding: 0px 10px 0 10px;
+}
+
+.paling-bawah {
+    padding-top: 150px;
+}
+
+.kolom-tengah h3 {
+    color: white;
+}
+.kolom-kanan h3 {
+    color: white;
+}
+
+.kolom-kanan p a {
+    color: palevioletred;
 }
 
 @media (max-width: 760px) {
+    header {
+        height: 100px;
+    }
+
     .top-wrapper {
         padding: 70px 0 170px 0;
         background-size: 400px;
-        color: white;
         text-align: center;       
     }
 
@@ -73,14 +206,79 @@ a {
     .container-wrapper{
         margin: auto;
     }
+
+    .flex-list {
+        flex-direction: column;
+    }
+
+    .flex-list .lesson {
+        margin: auto;
+    }
+
+    .mid-wrapper {
+        background-color: none;
+    }
+    
+    .mid-wrapper .container {
+        height: 1500px;
+        padding-bottom: 90px;
+        background-color: #f7f7f7;
+        text-align: center;
+        opacity: .85;
+    }
+
+    .kolom-kiri img {
+        width:100px;
+    }
+
+    footer {
+        margin-top: 900px;
+        height: 200px;
+        width: 100%;
+        float: left;
+    }
+
+    footer .container li {
+        float: left;
+        list-style: none;
+        padding: 0px 5px 0 5px;
+    }
+
+    .kolom-tengah h3 {
+        font-size: 15px;
+    }
+
+    .kolom-tengah p {
+        font-size: 10px;
+    }
+
+    .kolom-kanan h3 {
+        font-size: 15px;
+    }
+    
+    .kolom-kanan p a {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 1000px) {
     .top-wrapper {
-        padding: 100px 0 170px 0;
+        padding: 50px 0 170px 0;
         background-size: cover;
-        color: white;
         text-align: center;
+    }
+
+    .mid-wrapper {
+        height: 700px;
+        padding-bottom: 90px;
+    }
+
+    .flex-list {
+        flex-wrap: wrap;
+    }
+
+    .flex-list .lesson {
+        width: 50%;
     }
 
     .top-wrapper h1 {
@@ -96,4 +294,9 @@ a {
     .container-wrapper{
         margin: 5%;
     }
+
+    .top-wrapper p {
+        opacity: 1;
+        margin-top: 100px;
+      }
 }
